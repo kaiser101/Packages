@@ -1,0 +1,27 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Babel",
+		"Boxy Theme",
+		"Boxy Theme Addon - Widget Font Size",
+		"DA UI",
+		"Emmet",
+		"FileDiffs",
+		"Git",
+		"HTML-CSS-JS Prettify",
+		"HTMLBeautify",
+		"IndentX",
+		"JSON Reindent",
+		"JsPrettier",
+		"JSX",
+		"Package Control",
+		"React ES6 Snippets",
+		"SublimeREPL",
+		"VBScript"
+	]
+}
