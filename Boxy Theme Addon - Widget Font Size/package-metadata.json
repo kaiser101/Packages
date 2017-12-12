@@ -1,1 +1,0 @@
-{"sublime_text": ">=3103", "version": "3.0.0", "platforms": ["*"], "url": "https://github.com/ihodev/sublime-boxy-addon-widget-font-size", "dependencies": [], "description": "Change the font size of the panel input and console text (to 13 px by default)"}
