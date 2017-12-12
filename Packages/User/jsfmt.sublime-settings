@@ -1,0 +1,38 @@
+{
+	"autoformat": false,
+	"extensions":
+	[
+		"js",
+		"jsx",
+		"sublime-settings"
+	],
+	"options":
+	{
+		"jsx":
+		{
+			"JSXAttributeQuotes": "",
+			"JSXExpressionsSingleLine": true,
+			"alignWithFirstAttribute": false,
+			"attrsOnSameLineAsTag": false,
+			"closingTagOnNewLine": false,
+			"firstAttributeOnSameLine": true,
+			"formatJSX": true,
+			"formatJSXExpressions": true,
+			"htmlOptions":
+			{
+				"brace_style": "none",
+				"indent_char": " ",
+				"indent_size": 2,
+				"max_preserve_newlines": 2,
+				"preserve_newlines": true
+			},
+			"maxAttrsOnTag": 3,
+			"removeSpaceBeforeClosingJSX": false,
+			"spaceInJSXExpressionContainers": " "
+		},
+		"plugins":
+		[
+			"esformatter-jsx",
+		]
+	}
+}
