@@ -1,3 +1,18 @@
 {
-	"accent_color": "#826bf5"
+  "scrollbar_width": 2,
+  "scrollbar_flavor": "square",
+  "scrollbar_track_background_color": [
+    "specify",
+    ["rgba", 255, 255, 255, 0.05],
+    ["rgba", 0, 0, 0, 0.05],
+  ],
+
+  "scrollbar_puck_background_color": [
+    "specify",
+    ["rgba", 255, 255, 255, 0.10],
+    ["rgba", 255, 0, 0, 0.50],
+  ],
+  "tab_height": 43,
+  "console_panel_scrollbar_margin": [2, 0, 0, 0],
+
 }

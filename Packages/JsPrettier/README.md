@@ -2,14 +2,14 @@
 
 [![Travis CI Build Status](https://travis-ci.org/jonlabelle/SublimeJsPrettier.svg?branch=master)](https://travis-ci.org/jonlabelle/SublimeJsPrettier)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/ta7379jk57cdwu76/branch/master?svg=true)](https://ci.appveyor.com/project/jonlabelle/sublimejsprettier/branch/master)
-[![SonarQube Quality Gate Status](https://sonarcloud.io/api/badges/gate?key=org.jonlabelle-github:SublimeJsPrettier)](https://sonarcloud.io/dashboard/index/org.jonlabelle-github:SublimeJsPrettier)
+[![SonarQube Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=org.jonlabelle-github%3ASublimeJsPrettier&metric=alert_status)](https://sonarcloud.io/dashboard/index/org.jonlabelle-github:SublimeJsPrettier)
 [![Package Control Installs](https://img.shields.io/packagecontrol/dt/JsPrettier.svg?label=installs)](https://packagecontrol.io/packages/JsPrettier)
 [![Latest Release](https://img.shields.io/github/tag/jonlabelle/SublimeJsPrettier.svg?label=version)](https://github.com/jonlabelle/SublimeJsPrettier/releases)
 
 > [JsPrettier] is a Sublime Text Plug-in for [Prettier], the opinionated code
 > formatter.
 
-[![](https://github.com/jonlabelle/SublimeJsPrettier/blob/master/screenshots/before_and_after.gif?raw=true)](https://github.com/jonlabelle/SublimeJsPrettier/blob/master/screenshots/demo.gif)
+[![Before and After JsPrettier](https://github.com/jonlabelle/SublimeJsPrettier/blob/master/screenshots/before_and_after.gif?raw=true)](https://github.com/jonlabelle/SublimeJsPrettier/blob/master/screenshots/demo.gif)
 
 > [Watch a Quick Demo]
 
@@ -32,6 +32,8 @@
     - [Prettier Options](#prettier-options)
     - [Project-level Settings](#project-level-settings)
     - [Prettier Configuration Files](#prettier-configuration-files)
+- [Prettier Plug-in Support](#prettier-plug-in-support)
+    - [Prettier PHP](#prettier-php)
 - [Issues](#issues)
 - [Changes](#changes)
 - [Author](#author)
@@ -46,17 +48,15 @@ Operating Systems.
 
 ### Requirements
 
-JsPrettier requires the following programs to be installed prior to use:
-
-- [Sublime Text] - Text editor for code
-- [node.js] - JavaScript runtime
-- [yarn] or [npm] - Package manager for JavaScript
-- [Prettier] - Opinionated JavaScript formatter
+- [Sublime Text] – Text editor for code
+- [node.js] – JavaScript runtime
+    - [yarn] or [npm] – Package manager for JavaScript
+        - [Prettier] – Opinionated code formatter (v1.17 or above)
 
 ### Install Prettier
 
 If you installed [Prettier] globally (using the [yarn] or [npm] command below),
-there is nothing else you need to do.
+there's nothing else you need to do.
 
 ```bash
 # using yarn:
@@ -95,8 +95,8 @@ From the **main application menu**, navigate to:
 
 ### Install JsPrettier Using Git
 
-Alternatively, if you're a Git user, you can install [JsPrettier] and keep it
-up-to-date by cloning the repository directly into your [Sublime Text Packages directory].
+If you're a Git user, you can install [JsPrettier] and keep it up-to-date by
+cloning the repository directly into your [Sublime Text Packages directory].
 
 You can locate your Sublime Text Packages directory by using the menu item
 `Preferences` -> `Browse Packages...`
@@ -113,11 +113,11 @@ and select ***JsPrettier Format Code***.
 
 ### Command Scope
 
-`JsPrettier` will attempt to format selections of code first, otherwise the
-entire file will be formatted.
+`JsPrettier` will attempt to format selections of code first, then the entire
+file.
 
-> **NOTE:** When the `auto_format_on_save` setting is set to `true`, the
-> **entire file** will always be formatted.
+> **NOTE:** When `auto_format_on_save` is `true`, the **entire file** will be
+> formatted.
 
 ### Custom Key Binding
 
@@ -137,44 +137,75 @@ file, accessible from the **Preferences** > **Package Settings** >
 ### Sublime Text Settings
 
 - **debug** (default: ***false***)  
-    When enabled (*true*), additional debugging information about the command
-    and configured settings will be printed to the Sublime Text Console; useful
-    for troubleshooting purposes.
+    When enabled (*true*), debug info will print to the console - useful for
+    troubleshooting and inspecting generated commands passed to Prettier.
+    Enabling debug mode also sets Prettier's [`--loglevel`] option to `debug`
+    (when not overridden by `additional_cli_args`), for printing additional
+    debug information to the console.
 
 - **prettier_cli_path** (default: ***empty***)  
-    It's recommended to leave this setting empty (the default). However, if
-    Sublime Text has problems resolving the CLI path to the [Prettier]
-    executable, you can explicitly set the appropriate path here.
+    If Sublime Text has problems automatically resolving a path to [Prettier],
+    you can set a custom path here.
 
-    When the setting is left empty, the path is resolved by searching locations
-    in the following order, returning the first matched path:
+    When the setting is empty, the plug-in will attempt to find Prettier by:
 
-    - Locally installed Prettier, relative to the Sublime Text Project file root
-      directory, e.g.: `node_modules/.bin/prettier`.
-    - The user's home directory, e.g.: `$HOME/node_modules/.bin/prettier`.
-    - Look in the *JsPrettier* Sublime Text plug-in directory for
-      `node_modules/.bin/prettier`.
-    - Finally, check if Prettier is [installed globally].
+    - Searching the path relative to the current Sublime Text Project directory...
+      `node_modules/.bin/prettier` and `node_modules/prettier/bin-prettier.js`.
+    - The *JsPrettier* plug-in directory... `node_modules/.bin/prettier` and `node_modules/prettier/bin-prettier.js`.
+    - The current user's home directory... `$HOME/node_modules/.bin/prettier`.
+    - And finally a globally installed Prettier instance.
+  
+    **Examples:**
+  
+    ```
+    ...
+    {
+        // macOS/Linux:
+        "prettier_cli_path": "/usr/local/bin/prettier"
+        "prettier_cli_path": "/some/absolute/path/to/node_modules/.bin/prettier"
+        "prettier_cli_path": "./node_modules/.bin/prettier"
+        "prettier_cli_path": "~/bin/prettier"
+        "prettier_cli_path": "$HOME/bin/prettier"
+        "prettier_cli_path": "${project_path}/bin/prettier"
+        "prettier_cli_path": "$ENV/bin/prettier"
 
-    > [nvm] users are required to set an appropriate absolute
-    > *prettier_cli_path* (and absolute *node_path*); according to the target
-    > runtime environment.
+        // Windows:
+        "prettier_cli_path": "C:/path/to/prettier.cmd"
+        "prettier_cli_path": "%USERPROFILE%\\bin\\prettier.cmd"
+    }
+    ...
+    ```
 
 - **node_path** (default: ***empty***)  
-    It's recommended to leave this setting empty (the default). However, if
-    Sublime Text has problems resolving the absolute path to the node
-    executable, you can explicitly set the appropriate path here.
+    If Sublime Text has problems resolving the absolute path to node, you can
+    set a custom path here.
+  
+    **Examples:**
+  
+    ```
+    ...
+    {
+        // macOS/Linux:
+        "node_path": "/usr/local/bin/node"
+        "node_path": "/some/absolute/path/to/node"
+        "node_path": "./node"
+        "node_path": "~/bin/node"
+        "node_path": "$HOME/bin/node"
+        "node_path": "${project_path}/bin/node"
+        "node_path": "$ENV/bin/node"
 
-    > [nvm] users are required to set an appropriate absolute *node_path* (and
-    > absolute *prettier_cli_path*); according to the target runtime
-    > environment.
+        // Windows:
+        "node_path": "C:/path/to/node.exe"
+        "node_path": "%USERPROFILE%\\bin\\node.exe"
+    }
+    ...
+    ```
 
 - **auto_format_on_save** (default: ***false***)  
-    Whether or not to automatically format the file on save.
+    Automatically format the file on save.
 
 - **auto_format_on_save_excludes** (default: [])  
-    Ignore auto formatting when the target file, or its path resides in a
-    particular location, and when `auto_format_on_save` is turned on.
+    File exclusion patterns to ignore when `auto_format_on_save` is enabled.
   
     **Example:**
   
@@ -188,6 +219,15 @@ file, accessible from the **Preferences** > **Package Settings** >
     }
     ```
 
+- **auto_format_on_save_requires_prettier_config** (default: ***false***)  
+    Enable auto format on save *only* when a Prettier config file is (or isn't)
+    found.
+
+    The Prettier config file is resolved by first checking if a `--config </path/to/prettier/config>`
+    is specified in the `additional_cli_args` setting, then by searching the
+    location of the file being formatted, and finally navigating up the file tree
+    until a config file is (or isn't) found.
+
 - **allow_inline_formatting** (default: ***false***)  
     Enables the ability to format *selections* of in-lined code. For example, to
     format a selection of JavaScript code within a PHP or HTML file. When
@@ -195,38 +235,59 @@ file, accessible from the **Preferences** > **Package Settings** >
     Text syntaxes.
 
 - **custom_file_extensions** (default: [])  
-    There's built-in support already for `js`, `jsx`, `json`, `graphql/gql`,
-    `ts`, `tsx`, `css`, `scss`, `less` and `md` files. Additional file
-    extensions MUST be specified here, without the leading dot.
+    There's built-in support already for `js`, `jsx`, `mjs`, `json`, `html`,
+    `graphql/gql`, `ts`, `tsx`, `css`, `scss`, `less`, `md`, `mdx`, `yml`,
+    `vue` and `component.html` (angular html) files.
+
+    Put additional file extensions here, and be sure not to include the
+    leading dot in the file extension.
 
 - **max_file_size_limit** (default: ***-1***)  
-    The maximum allowed file size to format in bytes. For performance reasons,
+    The max allowed file size to format in bytes. For performance reasons,
     files with a greater file size than the specified `max_file_size_limit` will
-    not be formatted. Setting the `max_file_size_limit` value to ***-1*** will
-    disable file size checking (default).
+    not format. Setting the `max_file_size_limit` value to ***-1*** disables the
+    file size checking (default).
+
+- **disable_tab_width_auto_detection** (default: ***false***)  
+    Whether or not to disable the plug-in from automatically setting Prettier's
+    "[tabWidth / \--tab-width](https://prettier.io/docs/en/options.html#tab-width)"
+    option, and adhere to the Prettier configured setting.
+
+- **disable_prettier_cursor_offset** (default: ***false***)  
+    There's an apparent (and nasty) defect in Prettier that seems to occur
+    during Prettier's [cursor offset](https://prettier.io/docs/en/api.html#prettierformatwithcursorsource-options)
+    calculation, and when attempting to format large or minimized files (but not limited to just these cases).
+    The issue effectively results in the CPU spiking to a constant 100%...
+    indefinitely, or until the node executable/process running Prettier is
+    forcefully terminated.
+
+    To avoid this problematic behavior, or until the defect is resolved, you can
+    disable the plug-in (JsPrettier) from ever passing the cursor offset
+    position to Prettier by setting the `disable_prettier_cursor_offset` value
+    to `true`.
+
+    - See related issues: [#147](https://github.com/jonlabelle/SublimeJsPrettier/issues/147), [#168](https://github.com/jonlabelle/SublimeJsPrettier/issues/168)
+    - [Prettier Cursor Offset Documentation](https://prettier.io/docs/en/api.html#prettierformatwithcursorsource-options)
 
 - **additional_cli_args** (default: {})  
-    A key-value pair of additional arguments to append to the prettier command.
+    A key-value pair of arguments to append to the prettier command.
 
     **Examples:**
 
     ```json
     {
         "additional_cli_args": {
-            "--config": "path/to/my/custom/.prettierrc",
+            "--config": "~/.prettierrc",
+            "--config": "$HOME/.prettierrc",
+            "--config": "${project_path}/.prettierrc",
+            "--config": "/some/absolute/path/to/.prettierrc",
+
             "--config-precedence": "prefer-file",
-            "--ignore-path": "path/to/.prettierignore",
+            "--ignore-path": "${file_path}/.prettierignore",
             "--with-node-modules": ""
         }
     }
     ```
-
-    > **NOTE:** If choosing to specify additional CLI args, it is assumed that
-    > each argument is supported by the [Prettier CLI]. Otherwise, the command
-    > will fail to run, and errors will be dumped out to the [Sublime Text
-    > Console]. You can also enable the `debug` setting to inspect the generated
-    > command-line output passed to prettier; which is also useful for quickly
-    > troubleshooting issues.
 
 ### Prettier Options
 
@@ -236,11 +297,16 @@ file, accessible from the **Preferences** > **Package Settings** >
 - **printWidth** (default: ***80***)  
     Specifies that the formatted code should fit within this line limit.
 
-- **tabWidth** (internally set by the [***tab_size***] setting)  
-    The number of spaces to use per tab.
+- **tabWidth**  (default: ***2***)  
+    Specify the number of spaces per indentation-level.
+
+    **IMPORTANT:** By default, "tabWidth" is automatically set using the
+    SublimeText configured value for "[tab_size]". To disable this behavior, you
+    must first change the `disable_tab_width_auto_detection` value from `false`,
+    to `true`.
 
 - **singleQuote** (default: ***false***)  
-    If true, code will be formatted using single-quotes, instead of double-quotes.
+    Format code using single or double-quotes.
 
 - **trailingComma** (default: "***none***")  
    Controls the printing of trailing commas wherever possible. Valid options:
@@ -252,31 +318,24 @@ file, accessible from the **Preferences** > **Package Settings** >
     Controls the printing of spaces inside object literals.
 
 - **jsxBracketSameLine** (default: ***false***)  
-    When *true*, right-angle brackets ("&gt;") of multi-line jsx elements
-    will be placed at the end of the last line, instead of being alone on the
-    next line.
+    When *true*, multi-line jsx elements with right-angle brackets ("&gt;") are
+    placed at the end of the last line, instead of alone on the next line.
 
-- **parser** (default: "***babylon***")  
-    Which parser to use. Valid options are "***flow***", "***babylon***",
-    "***typescript***", "***css***", "***json***", "***graphql***"
-    and "***markdown***".
-  
-    The `parser` options automatically set based on the file type or selection
-    being edited, and should need to be adjusted; or left alone using the
-    default.
+- **parser** (default: "***babel***")  
+    The [`parser`] is automatically set by the plug-in (JsPrettier), based
+    on the contents of current file or selection.
   
 - **semi** (default: ***true***)  
     ***true*** to add a semicolon at the end of every line, or ***false*** to
-    add a semicolon only at the beginning of lines that may introduce ASI
-    failures.
+    add a semicolon at the beginning of lines that may introduce ASI failures.
 
 - **requirePragma** (default: ***false***)  
-    Prettier can restrict itself to only format files that contain a special
-    comment, called a pragma, at the top of the file. This is very useful when
-    gradually transitioning large, unformatted codebases to prettier.
+    Prettier can ignore formatting files that contain a special comment, called
+    a *pragma* at the top of the file. This is useful when gradually
+    transitioning large, unformatted codebases to prettier.
 
-    For example, a file with the following as its first comment will be
-    formatted when `--require-pragma` is supplied:
+    For example, a file with its first comment specified below, and the
+    `--require-pragma` option:
 
     ```js
     /**
@@ -293,10 +352,11 @@ file, accessible from the **Preferences** > **Package Settings** >
     ```
 
 - **proseWrap** (default: "***preserve***")  
-    (*Markdown Only*) By default, Prettier will wrap markdown text as-is since
-    some services use a linebreak-sensitive renderer, e.g. GitHub comment and
-    BitBucket. In some cases you may want to rely on SublimeText soft wrapping
-    instead, so this option allows you to opt out with "never".
+    (*Markdown and YAML Only*) By default, Prettier will wrap Markdown and YAML
+    text as-is since some services use a linebreak-sensitive renderer, e.g.
+    GitHub comment and BitBucket. In some cases you may want to rely on
+    SublimeText soft wrapping instead, so this option allows you to opt out with
+    "never".
 
     Valid Options:
 
@@ -312,14 +372,33 @@ file, accessible from the **Preferences** > **Package Settings** >
     - "***avoid***" (default) - Omit parentheses when possible. Example: `x => x`
     - "***always***" - Always include parentheses. Example: `(x) => x`
 
+- **htmlWhitespaceSensitivity** (default: "***css***")  
+    (*HTML Only*) Specify the global whitespace sensitivity for HTML files,
+    see [whitespace-sensitive formatting] for more info.
+
+    Valid Options:
+
+    - "***css***" (default) - Respect the default value of CSS display property.
+    - "***strict***" - Whitespaces are considered sensitive.
+    - "***ignore***" - Whitespaces are considered insensitive.
+
+- **quoteProps** (default: "***as-needed***")  
+    Change when properties in objects are quoted. Requires [Prettier v1.17+].
+
+    Valid options:
+
+    - "***as-needed***" (default) - Only add quotes around object properties where required.
+    - "***consistent***" - If at least one property in an object requires quotes, quote all properties.
+    - "***preserve***" - Respect the input use of quotes in object properties.
+
 See the Prettier Options [doc page] for more details and examples.
 
 ### Project-level Settings
 
-JsPrettier supports [Project-level settings], specified in
-`<project_name>.sublime-project` files. In order for Project-level settings to
-override the Defaults and User configured settings, a new `js_prettier` section
-must be created under the project file's `settings` section.
+JsPrettier supports [Project-level settings] set within `<project_name>.sublime-project` files.
+In order for Project-level settings to override the default and customized
+preferences, create a `js_prettier` section under the project file's `settings`
+section.
 
 #### Example Sublime Text Project File
 
@@ -337,21 +416,27 @@ must be created under the project file's `settings` section.
             "node_path": "",
             "auto_format_on_save": false,
             "auto_format_on_save_excludes": [],
+            "auto_format_on_save_requires_prettier_config": false,
             "allow_inline_formatting": false,
             "custom_file_extensions": [],
             "max_file_size_limit": -1,
+            "disable_tab_width_auto_detection": false,
+            "disable_prettier_cursor_offset": false,
             "additional_cli_args": {},
             "prettier_options": {
                 "printWidth": 80,
+                "tabWidth": 2,
                 "singleQuote": false,
                 "trailingComma": "none",
                 "bracketSpacing": true,
                 "jsxBracketSameLine": false,
-                "parser": "babylon",
+                "parser": "babel",
                 "semi": true,
                 "requirePragma": false,
                 "proseWrap": "preserve",
-                "arrowParens": "avoid"
+                "arrowParens": "avoid",
+                "htmlWhitespaceSensitivity": "css",
+                "quoteProps": "as-needed"
             }
         }
     }
@@ -360,27 +445,23 @@ must be created under the project file's `settings` section.
 
 ### Prettier Configuration Files
 
-When [Prettier configuration files] are detected, Prettier options defined in
-*Sublime Text* settings and Project files will be overridden with their Prettier
-config file counterparts, with the exception of `parser`, `tabWidth` and
-`useTabs`; which are all auto-detected based of the current view or
-selection(s).
-
-> *The configuration file will be resolved starting from the location of the file
-> being formatted, and searching up the file tree until a config file is (or
-> isn't) found.*
+When [Prettier configuration files] are detected, options defined in *Sublime
+Text* are ignored, with the exception of `parser`, `tabWidth` and `useTabs`.
+These options are automatically set based on syntax settings of the current file
+or selection(s) defined in Sublime Text.
 
 #### Custom Prettier Config File Path
 
-To specify a custom Prettier config path, simply add the `--config` argument
-with an appropriate path to the `additional_cli_args` setting. Here's an
-example.
+To specify a custom Prettier config path, simply add a `--config <path>`
+key-value item to `additional_cli_args`. Here's an example:
 
 ```json
 {
-    "additional_cli_args": {
-        "--config": "path/to/my/custom/.prettierrc",
-        "--config-precedence": "prefer-file"
+    "additional_cli_args":
+    {
+        "--config": "~/some/path/from/my/home/.prettierrc",
+        "--config-precedence": "prefer-file",
+        "--ignore-path": "${project_path}/.prettierignore"
     }
 }
 ```
@@ -398,9 +479,36 @@ and tell Prettier not to attempt to find config files.
 }
 ```
 
+#### Prettier Ignore Config File Discovery (`.prettierignore`)
+
+When the [`--ignore-path`] option is NOT specified in `additional_cli_args`, the
+plug-in will attempt to discover and set `--ignore-path <file>` when a
+`.prettierignore` config exists in the same directory of the source file
+(first), or the active Sublime Text project root directory (second).
+
+## Prettier Plug-in Support
+
+### Prettier PHP
+
+In most cases, [Prettier PHP] works as drop-in replacement for Prettier.
+However, JsPrettier only detects if you're formatting a PHP file (or PHP selection),
+and sets the `--parser` to `php` accordingly. Aside from that, it's up to you ensure your
+config(s) conform to Prettier PHP [options](https://github.com/prettier/plugin-php#configuration).
+
+To **install Prettier PHP** in your project root, and use it as a drop-in
+replacement for Prettier:
+
+```bash
+cd to/project/directory
+npm install @prettier/plugin-php
+```
+
 ## Issues
 
-To [report an issue], please follow the steps outlined in the [Issue Template].
+To report a bug or a make suggestion, please [open a new issue] selecting the
+appropriate Issue Template (**Bug report** or **Feature request**). Be sure to
+follow the guidelines outlined in each template... otherwise your submission
+will be subject to immediate closure.
 
 ## Changes
 
@@ -415,7 +523,7 @@ Jon LaBelle
 [MIT License]
 
 [Watch a Quick Demo]: https://github.com/jonlabelle/SublimeJsPrettier/blob/master/screenshots/demo.gif
-[Prettier]: https://github.com/jlongster/prettier
+[Prettier]: https://prettier.io
 [Prettier API section]: https://github.com/prettier/prettier#api
 [Prettier CLI]: https://github.com/prettier/prettier#cli
 [Package Control]: https://packagecontrol.io/packages/JsPrettier
@@ -423,20 +531,26 @@ Jon LaBelle
 [JsPrettier]: https://github.com/jonlabelle/SublimeJsPrettier
 [node.js]: https://nodejs.org
 [Project-level Settings]: http://docs.sublimetext.info/en/latest/reference/projects.html
-[***tab_size***]: http://docs.sublimetext.info/en/latest/reference/settings.html#whitespace-and-indentation
+[tab_size]: http://docs.sublimetext.info/en/latest/reference/settings.html#whitespace-and-indentation
 [***translate_tabs_to_spaces***]: http://docs.sublimetext.info/en/latest/reference/settings.html#whitespace-and-indentation
 [installed globally]: #install-prettier
-[yarn]: https://yarnpkg.com/
-[npm]: https://www.npmjs.com/
+[yarn]: https://yarnpkg.com
+[npm]: https://www.npmjs.com
 [nvm]: https://github.com/creationix/nvm
 [zip file]: https://github.com/jonlabelle/SublimeJsPrettier/archive/master.zip
 [Sublime Text Packages directory]: #default-st-paths
 [manual download instructions]: #manual-download
 [Sublime Text Console]: http://docs.sublimetext.info/en/latest/basic_concepts.html#sublime-text-is-programmable
 [custom key binding]: http://docs.sublimetext.info/en/latest/customization/key_bindings.html
-[Prettier Configuration files]: https://github.com/prettier/prettier/blob/master/README.md#configuration-file
-[issue template]: https://github.com/jonlabelle/SublimeJsPrettier/blob/master/.github/ISSUE_TEMPLATE.md
-[report an issue]: https://github.com/jonlabelle/SublimeJsPrettier/issues
+[Prettier Configuration files]: https://prettier.io/docs/en/configuration.html
+[issue template]: https://github.com/jonlabelle/SublimeJsPrettier/blob/master/.github/ISSUE_TEMPLATE/bug_report.md
 [Changelog]: https://github.com/jonlabelle/SublimeJsPrettier/blob/master/CHANGELOG.md
 [MIT License]: https://github.com/jonlabelle/SublimeJsPrettier/blob/master/LICENSE.txt
 [doc page]: https://prettier.io/docs/en/options.html
+[`--ignore-path`]: https://prettier.io/docs/en/cli.html#ignore-path
+[whitespace-sensitive formatting]: https://prettier.io/blog/2018/11/07/1.15.0.html#whitespace-sensitive-formatting
+[`parser`]: https://prettier.io/docs/en/options.html#parser
+[`--loglevel`]: https://prettier.io/docs/en/cli.html#loglevel
+[Prettier PHP]: https://github.com/prettier/plugin-php
+[open a new issue]: https://github.com/jonlabelle/SublimeJsPrettier/issues/
+[Prettier v1.17+]: https://prettier.io/blog/2019/04/12/1.17.0.html

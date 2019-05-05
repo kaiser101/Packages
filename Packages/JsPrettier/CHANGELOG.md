@@ -1,5 +1,116 @@
 # Changelog
 
+## 1.27.0
+
+**Release Date:** 2019-04-18
+
+- Added support for new Prettier [Quote Props] option; changes quotes around
+  object properties (requires [Prettier v1.17+]).
+  
+    - Default: `"as-needed"`
+    - CLI Override: `--quote-props <as-needed|consistent|preserve>`
+    - API Override: `quoteProps:` `"<as-needed|consistent|preserve>"`
+  
+  **Valid options:**
+
+    - `"as-needed"` (default) - Only add quotes around object properties where required.
+    - `"consistent"` - If at least one property in an object requires quotes, quote all properties.
+    - `"preserve"` - Respect the input use of quotes in object properties.
+
+## 1.26.5
+
+**Release Date:** 2019-04-07
+
+- Added new setting (`disable_prettier_cursor_offset`) to disable Prettier's
+  (buggy) cursor offset calculation.
+
+  There's an apparent (and nasty) defect in Prettier that seems to occur
+  during Prettier's [cursor offset](https://prettier.io/docs/en/api.html#prettierformatwithcursorsource-options)
+  calculation, and when attempting to format large or minimized files (but not limited to just these cases).
+  The issue effectively results in the CPU spiking to a constant 100%...
+  indefinitely, or until the node executable/process running Prettier is
+  forcefully terminated.
+  
+  To avoid this problematic behavior, or until the defect is resolved, you can
+  disable the plug-in (JsPrettier) from ever passing the cursor offset
+  position to Prettier by setting the `disable_prettier_cursor_offset` value
+  to `true`.
+  
+    - See related issues: [#147](https://github.com/jonlabelle/SublimeJsPrettier/issues/147), [#168](https://github.com/jonlabelle/SublimeJsPrettier/issues/168)
+    - [Prettier Cursor Offset Documentation](https://prettier.io/docs/en/api.html#prettierformatwithcursorsource-options)
+
+## 1.26.0
+
+**Release Date:** 2019-03-17
+
+- Added support for formatting PHP files; requires the [Prettier PHP Plugin].
+
+    ```bash
+    cd to/project/directory
+    npm install @prettier/plugin-php
+    ```
+
+## 1.25.0
+
+**Release Date:** 2019-02-27
+
+- Enabling debug mode now also sets Prettier's [`--loglevel`] option to `debug`
+  (when not overridden by `additional_cli_args`), for printing additional debug
+  information to the console.
+
+## 1.24.0
+
+**Release Date:** 2019-01-29
+
+- Added support for auto-expanding environment and Sublime Text (v3+ only)
+  variables in path-like settings. Including `prettier_cli_path`, `node_path`
+  and options defined in `additional_cli_args` (e.g. `--config` `<path>`).
+
+  Check-out the [default settings] \(comment section) for examples.
+  
+## 1.23.0
+
+**Release Date:** 2019-01-25
+
+- Renamed default `babylon` parser to `babel` (requires [Prettier v1.16+]).
+  Babel's parser, babylon, was renamed to @babel/parser in Babel 7.
+
+  See the [Prettier v1.16] release notes page for additional information on the
+  parser change, including new features and bug fixes.
+  
+## 1.22.0
+
+**Release Date:** 2019-01-21
+
+- Added setting to `disable_tab_width_auto_detection` (default is `false`);
+  which disables the default behavior of the plug-in automatically setting
+  Prettier's "tabWidth" option (at runtime) with the SublimeText configured
+  value for "tab_size".
+
+## 1.21.0
+
+**Release Date:** 2018-09-28
+
+- Added YAML syntax/file formatting support. Requires [Prettier v1.14+].
+
+## 1.20.0
+
+**Release Date:** 2018-02-13
+
+- Added new `auto_format_on_save_requires_prettier_config` setting that will
+  enable/disable auto format on save *only* if a Prettier config file is (or isn't) found.
+  
+  The Prettier config file is resolved by first checking if a `--config </path/to/prettier/config>`  
+  is specified in the `additional_cli_args` setting, then by searching the
+  location of the file being formatted, and finally navigating up the file tree
+  until a config file is (or isn't) found.
+
+## 1.19.0
+
+**Release Date:** 2018-01-12
+
+- Support for Vue Single File Components. Requires [Prettier v1.10+].
+
 ## 1.18.0
 
 **Release Date:** 2017-12-09
@@ -192,7 +303,7 @@
 **Release Date:** 2017-01-19
 
 - Incorporated new prettier option to specify which parser to use. Valid options
-  for `parser` are `flow` and `babylon`. The `useFlowParser` option has been
+  for `parser` are `flow` and `babel`. The `useFlowParser` option has been
   deprecated, in favor of the new `parser` option.
 
 ## 1.0.2
@@ -235,3 +346,12 @@
 [#72]: https://github.com/jonlabelle/SublimeJsPrettier/issues/72
 [`arrowParens`]: https://prettier.io/docs/en/options.html#arrow-function-parentheses
 [Prettier v1.9+]: https://github.com/prettier/prettier/releases/tag/1.9.0
+[Prettier v1.10+]: https://prettier.io/blog/2018/01/10/1.10.0.html
+[Prettier v1.14+]: https://prettier.io/blog/2018/07/29/1.14.0.html#yaml
+[Prettier v1.16+]: https://prettier.io/blog/2019/01/20/1.16.0.html#rename-babylon-parser-to-babel-5647-by-wuweiweiwu
+[Prettier v1.16]: https://prettier.io/blog/2019/01/20/1.16.0.html
+[default settings]: https://github.com/jonlabelle/SublimeJsPrettier/blob/master/JsPrettier.sublime-settings
+[`--loglevel`]: https://prettier.io/docs/en/cli.html#loglevel
+[Prettier PHP Plugin]: https://github.com/prettier/plugin-php
+[Prettier v1.17+]: https://prettier.io/blog/2019/04/12/1.17.0.html
+[Quote Props]: https://prettier.io/docs/en/options.html#quote-props
