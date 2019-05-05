@@ -1,15 +1,30 @@
 {
 	"folder_history":
 	[
-		"/D/uncrustify",
-		"/C/Users/Gargi/redux-contact-app"
+		"/F/Sudharma/test code/React/my-react-express-app",
+		"/C/Users/Gargi/Downloads/react-boilerplate-building-scalable-apps/1-react-boilerplate-building-scalable-apps-m1-exercise-files/Before",
+		"/F/Sudharma/test code/React/counter-app",
+		"/F/Sudharma/test code/React/reduxexample",
+		"/F/Sudharma/test code/React/react-router-demos/01-basic-routing",
+		"/F/Sudharma/uncrustify",
+		"/F/Sudharma/test code/uncrustify",
+		"/F/Sudharma/test code/Groovy project",
+		"/D/Ebooks/Scala/fpinscala",
+		"/F/Sudharma/test code/Groovy/gradle-spring-boot-project",
+		"/F/Sudharma/test code/Python/docker-ansible/todobackend",
+		"/F/Sudharma/test code/Grrovy project",
+		"/F/Sudharma/test code/React/my-app",
+		"/F/Sudharma/test code/React/redux/examples/todos",
+		"/C/Users/Gargi/Downloads/react-counter",
+		"/F/Sudharma/test code/React/react-redux-example",
+		"/F/Sudharma/test code/React/mern-comment-box"
 	],
-	"last_version": 3143,
-	"last_window_id": 25,
+	"last_version": 3207,
+	"last_window_id": 67,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 480.0,
+		"new_window_height": 492.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -20,103 +35,230 @@
 			},
 			"build_system_choices":
 			[
+				[
+					[
+						[
+							"Packages/C++/C Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/C++/C Single File.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/Java/Ant.sublime-build",
+							""
+						],
+						[
+							"Packages/Java/JavaC.sublime-build",
+							""
+						],
+						[
+							"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/Java/JavaC.sublime-build",
+						""
+					]
+				]
 			],
 			"build_varint": "",
 			"command_palette":
 			{
-				"height": 144.0,
-				"last_filter": "Package Control: install",
+				"height": 0.0,
+				"last_filter": "",
 				"selected_items":
 				[
-					[
-						"Package Control: install",
-						"Package Control: Install Package"
-					],
 					[
 						"jsprettier",
 						"JsPrettier: Format Code"
 					],
 					[
-						"set jsx",
-						"Set Syntax: JSX"
+						"jspretti",
+						"JsPrettier: Format Code"
+					],
+					[
+						"jsprett",
+						"JsPrettier: Format Code"
+					],
+					[
+						"yaml",
+						"Pretty YAML: Reformat (Pretty Print) YAML"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"set yaml",
+						"Set Syntax: YAML"
+					],
+					[
+						"autopep",
+						"AutoPEP8: Format Code"
+					],
+					[
+						"Package Control: up",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"Package Control: install",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: upgrad",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"Package Control: upgrade",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"package",
+						"PackageResourceViewer: Open Resource"
+					],
+					[
+						"pa",
+						"PackageResourceViewer: Open Resource"
+					],
+					[
+						"package res",
+						"PackageResourceViewer: Open Resource"
+					],
+					[
+						"html met",
+						"HTMLPrettify"
 					],
 					[
 						"html",
 						"HTMLPrettify"
 					],
 					[
-						"install",
+						"snippe",
+						"Snippet: HTML - Meta tags"
+					],
+					[
+						"ht",
+						"HTMLPrettify"
+					],
+					[
+						"set html",
+						"Set Syntax: HTML"
+					],
+					[
+						"Package Control: insta",
 						"Package Control: Install Package"
-					],
-					[
-						"list packages",
-						"Package Control: List Packages"
-					],
-					[
-						"remove",
-						"Package Control: Remove Package"
-					],
-					[
-						"jsx",
-						"Set Syntax: JSX"
-					],
-					[
-						"set js",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"select theme",
-						"UI: Select Theme"
-					],
-					[
-						"Package Control: list packages",
-						"Package Control: List Packages"
-					],
-					[
-						"da",
-						"DA UI: Select Accent"
-					],
-					[
-						"set vb",
-						"Set Syntax: VBScript"
-					],
-					[
-						"indentx",
-						"IndentX: Indent"
-					],
-					[
-						"Package Control: upgrade",
-						"Package Control: Upgrade/Overwrite All Packages"
-					],
-					[
-						"Package Control: list",
-						"Package Control: List Packages"
 					],
 					[
 						"Package Control: remove",
 						"Package Control: Remove Package"
 					],
 					[
-						"jsfmt",
-						"JSFMT: Format the current file"
+						"sql",
+						"SQL Beautifier: Format Current SQL File"
+					],
+					[
+						"set sql",
+						"Set Syntax: SQL"
+					],
+					[
+						"set js",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"Package Control: disable",
+						"Package Control: Disable Package"
+					],
+					[
+						"autopep8",
+						"AutoPEP8: Format Code"
 					],
 					[
 						"json",
 						"JSON Reindent: reindent file or selection"
 					],
 					[
-						"set json",
-						"Set Syntax: JSON"
+						"Package Control: remo",
+						"Package Control: Remove Channel"
+					],
+					[
+						"Package Control: upgra",
+						"Package Control: Upgrade/Overwrite All Packages"
+					],
+					[
+						"Package Control: add",
+						"Package Control: Add Channel"
+					],
+					[
+						"resource",
+						"PackageResourceViewer: Open Resource"
+					],
+					[
+						"Package Control: list",
+						"Package Control: List Packages"
+					],
+					[
+						"scala",
+						"ScalaFormat: Format Current File"
+					],
+					[
+						"auto",
+						"User: Python PEP8 Autoformat"
+					],
+					[
+						"open",
+						"PackageResourceViewer: Open Resource"
+					],
+					[
+						"open resourc",
+						"PackageResourceViewer: Open Resource"
 					]
 				],
-				"width": 462.0
+				"width": 0.0
 			},
 			"console":
 			{
-				"height": 126.0,
+				"height": 157.0,
 				"history":
 				[
-					"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+					"window.run_command('resize_window', {'width': 640, 'height': 480})",
+					"window.run_command('resize_window', {'width': 800, 'height': 600})",
+					"window.run_command('resize_window', {'width': 640, 'height': 480})",
+					"window.run_command('resize_window', {'width': 800, 'height': 600})"
 				]
 			},
 			"distraction_free":
@@ -130,108 +272,138 @@
 			},
 			"file_history":
 			[
-				"/C/Users/Gargi/Downloads/Sublime Text Build 3156 x64/Data/Local/License.sublime_license",
-				"/D/Movies/Winter.Moments.XXX.DVDRip.x264-PBU[rarbg]/wintermoments-pbu.nfo",
-				"/C/Users/Gargi/quickstart-sample/target/surefire-reports/TEST-com.amey.AppTest.xml",
-				"/D/Movies/My.Cute.Little.Step.Sister.2.DiSC1.XXX.DVDRip.x264-BTRA/btra-cutelillsteps2d1.nfo",
-				"/C/Users/Gargi/Downloads/Sublime Text Build 3155 x64/f907d536-6543-48e5-93e3-ef367da9765b.dmp",
-				"/C/Users/Gargi/Downloads/Sublime Text Build 3155 x64/Data/Packages/Boxy Theme Addon - Widget Font Size/Widget - Boxy Tomorrow.sublime-settings",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/User/Package Control.sublime-settings",
-				"/D/Autotelnet.wsf",
-				"/C/Users/Gargi/redux-contact-app/src/actions/actionType.js",
-				"/H/Sublime Text/licenses.txt",
-				"/C/Users/Gargi/Downloads/license.txt",
-				"/C/Users/Gargi/Downloads/State Bank of India.htm",
-				"/D/Sublime Text/licenses.txt",
-				"/D/Sudharma/myfirstScript.scala",
-				"/D/prasanna/business idea/12 piece  500  rs weight 400 gram.htm",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/User/JsPrettier.sublime-settings",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/User/Default (Windows).sublime-keymap",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/User/Emmet.sublime-settings",
-				"/G/Unattend.xml",
-				"/C/Users/Gargi/Downloads/scrapper_mod.py",
-				"/C/Users/Gargi/AppData/Roaming/uTorrent/Young And Hairy.torrent",
-				"/D/Movies/Pretty Little Pussies (2017) WEB-DL 540p SPLIT SCENES MP4-KLEENEX/RARBG.com.nfo",
-				"/D/Movies/Young And Curious 4 (2017) WEB-DL SPLIT SCENES MP4-KLEENEX/RARBG.com.nfo",
-				"/D/Movies/Excite.XXX.720p.WEBRip.MP4-VSEX/vsex-excite-720p.nfo",
-				"/D/Movies/Excite.XXX.720p.WEBRip.MP4-VSEX/RARBG.to.nfo",
-				"/C/Installers/Office 2013/office_2013.txt",
-				"/C/Installers/Office 2013/office_2013_pro_plus_retail.txt",
-				"/C/Installers/Office 2013/office_2013_pro_plus.txt",
-				"/C/Installers/Office 2013/office_keys.txt",
-				"/C/Users/Gargi/Downloads/office_2013_pro_plus_retail.txt",
-				"/C/Users/Gargi/MyModule.scala",
-				"/G/Sublime Text/licenses.txt",
-				"/D/repository/repository.xml",
-				"/D/Sudharma/projects/angular/scotch-angular-testing/karma.conf.js",
-				"/D/Sudharma/projects/angular/scotch-angular-testing/server.js",
-				"/D/Movies/First Anal 5 (2017) WEB-DL SPLIT SCENES MP4-KLEENEX/RARBG.com.nfo",
-				"/C/Users/Gargi/utorrent_postscript.bat",
-				"/C/Installers/bitdefender_total_security_keys.txt",
-				"/C/Windows/Temp/Activeark JWT Oy",
-				"/C/Windows/Temp/19841129",
-				"/C/Windows/Temp/Adam Brooks",
-				"/G/Sublime Text/mylicense.txt",
-				"/H/sources/offline.xml",
-				"/H/sources/idwbinfo.txt",
-				"/H/sources/hwexclude.txt",
-				"/H/sources/en-us/erofflps.txt",
-				"/H/sources/hwcompatPE.txt",
-				"/H/sources/hwexcludePE.txt",
-				"/H/sources/hwcompat.txt",
-				"/H/MediaMeta.xml",
-				"/H/autorun.inf",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/Package Control/Package Control.sublime-settings",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+				"/C/Users/Gargi/Downloads/torrents.txt",
+				"/F/Sudharma/test code/React/counter-app/src/setupTests.js",
+				"/F/Sudharma/test code/React/counter-app/src/__snapshots__/App.test.js.snap",
+				"/D/Installables/Editors/Sublime Text/Licenses/licenses.txt",
+				"/C/Users/Gargi/.prettierrc.yaml",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/JsPrettier/JsPrettier.sublime-settings",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/User/JsPrettier.sublime-settings",
+				"/F/Sudharma/videocon_d2h",
+				"/J/Sublime Text/Licenses/licenses.txt",
+				"/F/Sudharma/test code/Python/traverse.py",
+				"/F/Sudharma/test code/C/hello.c",
+				"/F/Sudharma/Gargi_fee_details.txt",
+				"/C/Users/Gargi/AppData/Local/Temp/sudharma_karekar_vs_chimus_____.__.__.pgn",
+				"/C/Sublime Text Build 3176 x64/Data/Index/000473.log",
+				"/C/Users/Gargi/AppData/Local/Temp/salbeipit_vs_sudharma_karekar_____.__.__.pgn",
+				"/C/Users/Gargi/AppData/Local/Temp/sudharma_karekar_vs_GMRaby_2019.04.02.pgn",
+				"/F/Sudharma/test code/function_params.cpp",
+				"/F/Sudharma/test code/function2.cpp",
+				"/F/Sudharma/test code/function1.cpp",
+				"/F/Sudharma/test code/function.cpp",
+				"/F/Sudharma/test code/qsorter.cpp",
+				"/F/Sudharma/test code/function_params",
+				"/C/Users/Gargi/Downloads/sudharma_karekar_vs_LazerBlitz_____.__.__.pgn",
+				"/C/Users/Gargi/Downloads/BitBoard.java",
+				"/C/Users/Gargi/Downloads/AlternativeString.java",
+				"/C/Users/Gargi/Downloads/CFG.java",
+				"/C/Users/Gargi/Downloads/SerialCheck.java",
+				"/K/torrents/torrents.txt",
+				"/F/Sudharma/passport.txt",
+				"/F/Sudharma/acct.txt",
+				"/F/Sudharma/licenses.txt",
+				"/F/Sudharma/mtnl.txt",
+				"/F/Sudharma/mtnl_dns.txt",
+				"/F/Sudharma/nero 7 keys.TXT",
+				"/F/Sudharma/networkkey.txt",
+				"/F/Sudharma/KeyValueItemWriter.java.txt",
+				"/F/Sudharma/office2013.txt.txt",
+				"/F/Sudharma/raj.txt",
+				"/F/Sudharma/sbi_fd.txt",
+				"/F/Sudharma/sourceforge.txt",
+				"/F/Sudharma/sublime_resize.txt",
+				"/F/Sudharma/telnet.log",
+				"/F/Sudharma/allenray.txt",
+				"/F/Sudharma/AMEY-PC.txt",
+				"/F/Sudharma/card.txt",
+				"/F/Sudharma/win.txt",
+				"/F/Sudharma/emails.txt",
+				"/F/Sudharma/fallout.txt",
+				"/F/Sudharma/GARGI-PC.txt",
+				"/F/Sudharma/hdfclife.txt",
+				"/F/Sudharma/gargi_label.txt",
+				"/C/Users/Gargi/Downloads/JTO_TESI.pdf.txt",
+				"/F/Bills/Reliance/jio.txt",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/Theme - Default/Widget - Default.sublime-settings",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/Boxy Theme/widgets/Widget - Boxy Yesterday.stTheme",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/Theme - Default/Widget - Default.hidden-color-scheme",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/User/Preferences.sublime-settings",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/Default/Preferences.sublime-settings",
+				"/C/Users/Gargi/Downloads/event.pgn",
+				"/F/Sudharma/KeyValueItemWriter.java",
+				"/F/Sudharma/sun.cfg",
+				"/F/Sudharma/670.cfg",
+				"/F/Sudharma/uncrustify/etc/sun.cfg",
+				"/F/Sudharma/defaults.cfg",
+				"/C/Users/Gargi/Downloads/Barely Legal.torrent",
+				"/C/Users/Gargi/Downloads/670.cfg",
+				"/C/Users/Gargi/Downloads/A_Really_Really_Long_Class_Name.java",
+				"/D/Installables/Editors/Sublime Text/Installers/urls.txt",
+				"/C/Users/Gargi/Downloads/Boxing Beauties (PRIVATE GOLD) XXX WEB-DL NEW 2019.torrent",
+				"/C/Users/Gargi/Downloads/Filling Up the Babysitter",
+				"/C/Sublime Text Build 3176 x64/Data/Local/Session.sublime_session",
+				"/C/Users/Gargi/AppData/Local/Temp/pgn-data.pgn",
+				"/C/Users/Gargi/AppData/Local/Temp/dsbodhane_vs_sudharma_karekar_____.__.__.pgn",
+				"/F/Sudharma/test code/Javascript/styles.js",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/build.gradle",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/JacketRepository/build.gradle",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/Repository/src/main/java/com/pluralsight/repository/Repository.java",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/JacketRepository/src/test/java/com/pluralsight/jacket/repository/test/HibernateRepository.java",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/JacketRepository/src/main/java/com/pluralsight/jacket/models/Entry.java",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/JacketRepository/src/main/java/com/pluralsight/jacket/models/User.java",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/JacketRepository/src/main/java/com/pluralsight/jacket/repository/implementation/JacketRepository.java",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/JacketRepository/src/main/resources/hibernate.cfg.xml",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/HibernateRepository/src/main/java/com/pluralsight/hibernate/HibernateRepository.java",
+				"/D/Installables/Editors/Sublime Text/Licenses/license.txt",
+				"/F/Prasanna/pf_details.txt",
+				"/F/Sudharma/test code/Python/browse.py",
+				"/K/torrents/update.py",
+				"/K/torrents/models.txt",
+				"/K/torrents/models1.txt",
+				"/F/Sudharma/test code/Groovy/Example.groovy",
+				"/F/Sudharma/Resume/jpmc_taleo.txt",
+				"/D/Installables/Editors/Sublime Text/Preferences/Preferences.sublime-settings",
+				"/D/Installables/Editors/Sublime Text/Preferences/Preferences_current.sublime-settings",
+				"/D/Installables/Editors/Sublime Text/Preferences/Package Control.sublime-settings",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/User/Package Control.sublime-settings",
+				"/F/Sudharma/Resume/job_portal.txt",
+				"/C/Users/Gargi/Downloads/react-counter/package-lock.json",
+				"/C/Users/Gargi/Downloads/react-counter/public/index.html",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/Color Scheme - Legacy/Slush & Poppies.tmTheme",
+				"/F/Sudharma/test code/Groovy project/.idea/modules.xml",
+				"/F/Sudharma/test code/Groovy project/.idea/workspace.xml",
+				"/F/Sudharma/test code/Groovy project/.idea/misc.xml",
+				"/C/Users/Gargi/Downloads/324905607-Sublime-Text-3114-Licence-txt.txt",
+				"/J/Sublime Text/Licenses/sorted_list.xlsx",
+				"/K/torrents/torrents1.txt",
+				"/C/Users/Gargi/AppData/Local/Temp/sudharma_karekar_vs_aligmss7166_2018.12.09.pgn",
+				"/F/Sudharma/is_email_valid.cpp",
+				"/C/Sublime Text Build 3176 x64/Data/Local/License.sublime_license",
+				"/C/Users/Gargi/AppData/Local/Temp/sudharma_karekar_vs_Mamin_Vad_2018.11.24.pgn",
+				"/C/Users/Gargi/Downloads/everedit_win64_4379_portable/setting.ini",
 				"/C/Windows/WindowsUpdate.log",
-				"/D/jetty-distribution-9.3.11.v20160721/demo-base/webapps/ROOT/jetty.css",
-				"/D/jetty-distribution-9.3.11.v20160721/logs/2017_05_20.stderrout.log",
-				"/C/Users/Gargi/AppData/Local/Temp/Rar$DRa0.857/editor-app/app.js",
-				"/D/jetty-distribution-9.3.11.v20160721/logs/2017_03_11.stderrout.log",
-				"/C/msys64/mingw64.ini",
-				"/D/reliance_energy.txt",
-				"/C/Intel/Logs/IntelChipset.log",
-				"/C/Users/Gargi/Downloads/scrapper.py",
-				"/D/Vodafone/vodafone.txt",
-				"/D/Sudharma/licenses.txt",
-				"/D/uncrustify/build/config.h",
-				"/D/uncrustify/build/Makefile",
-				"/D/uncrustify/build/uncrustify.exe.stackdump",
-				"/C/Users/Gargi/Downloads/46574DF65B209EA7B4D05A7E44EA6092156A19E3.torrent",
-				"/C/Users/Gargi/Downloads/C454FCF9B75991262CFFF1C6BC67B03A68C0A557.torrent",
-				"/D/uncrustify/CMakeLists.txt",
-				"/D/Sudharma/SavingsInvestingParticipantDataFileItemReader.java",
-				"/D/defaults.cfg",
-				"/D/sun.cfg",
-				"/D/uncrustify.cfg",
-				"/H/Torrent/new/5AEC919A06AC3B0F2DD1E85002A6E8C18DDD2C0C.torrent",
-				"/H/Torrent/new/67F9C5D2B083D6B9F10F533C338099A3E1CAB856.torrent",
-				"/H/Torrent/new/64D8A5104EA73F8924EF5F618D3C6455BA28B078.torrent",
-				"/H/Torrent/new/15FD030ACF8F7DBD7BF6C2F730030AF5470187D9.torrent",
-				"/D/Sudharma/hello.cpp",
-				"/D/Sublime Text/Preferences.sublime-settings",
-				"/D/Sudharma/chenard/src/eval.cpp",
-				"/C/Users/Gargi/Downloads/311E25F8392F2C5D6A74EE80D27F290F4A630986.torrent",
-				"/D/apache-activemq-5.13.0/examples/amqp/java/src/main/java/example/Publisher.java",
-				"/D/apache-activemq-5.13.0/examples/amqp/java/src/main/java/example/Listener.java",
-				"/D/apache-maven-3.1.0/conf/settings.xml",
-				"/C/Windows/debug/WIA/wiatrace.log",
-				"/C/Windows/win.ini",
-				"/D/apache-maven-3.1.0/conf/logging/simplelogger.properties",
-				"/C/Users/Gargi/Wireless Network Connection-dlink-lite.xml",
-				"/C/Users/Gargi/Downloads/50F35BFD0919D9E78ECE334979141D721FF169C0.torrent",
-				"/C/Users/Gargi/Downloads/trackers.txt",
-				"/C/Users/Gargi/Downloads/manageAuthorPage.js",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/User/jsfmt.sublime-settings",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/jsfmt/jsfmt.js",
-				"/D/Sudharma/bookmarks/jsfmt.sublime-settings",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/Boxy Theme Addon - Widget Font Size/Widget - Boxy Tomorrow.sublime-settings",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/Boxy Theme Addon - Widget Font Size/README.md",
-				"/D/Sublime Text/Boxy-Preferences.sublime-settings"
+				"/D/Installables/Editors/Sublime Text/Licenses/sublime_merge_license.txt",
+				"/F/Sudharma/test code/Scala/Foo.scala",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/Boxy Theme Addon - Widget Font Size/Widget - Boxy Yesterday.sublime-settings",
+				"/C/Users/Gargi/Downloads/FrenchDate.scala",
+				"/C/Users/Gargi/Downloads/Timer.scala",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/ScalaFormat/ScalaFormat.sublime-settings",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/User/ScalaFormat.sublime-settings",
+				"/F/Sudharma/sublime_giveaway/geckodriver.log",
+				"/C/Program Files (x86)/TP-Link/TP-Link TL-WN822N/InstConfig.ini",
+				"/F/Bills/Reliance/reliance.txt",
+				"/C/Users/Gargi/Downloads/sublime_torrents.txt",
+				"/F/Sudharma/Chess/chess.txt",
+				"/F/Sudharma/Chess/getchesscode.py",
+				"/C/Users/Gargi/Downloads/brooklyn-decker-0a.jpg",
+				"/C/Users/Gargi/Downloads/license.txt",
+				"/C/flink-1.5.0/log/flink-Gargi-taskmanager.log",
+				"/C/flink-1.5.0/log/flink-Gargi-jobmanager.log"
 			],
 			"find":
 			{
-				"height": 24.0
+				"height": 25.0
 			},
 			"find_in_files":
 			{
@@ -245,11 +417,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"shashikant",
-					"CHITRA",
-					"PRASANNA",
-					"13",
-					"rg12o12"
+					"4"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -266,21 +434,37 @@
 			},
 			"incremental_find":
 			{
-				"height": 24.0
+				"height": 25.0
 			},
 			"input":
 			{
-				"height": 0.0
+				"height": 44.0
 			},
 			"menu_visible": true,
+			"output.YAMLMacros":
+			{
+				"height": 126.0
+			},
+			"output.autopep8":
+			{
+				"height": 112.0
+			},
+			"output.exec":
+			{
+				"height": 100.0
+			},
 			"output.find_results":
 			{
 				"height": 0.0
 			},
+			"output.git":
+			{
+				"height": 100.0
+			},
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 44.0
+				"height": 46.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -290,32 +474,36 @@
 				"selected_items":
 				[
 					[
-						"index.js",
-						"src\\index.js"
+						"set",
+						"src\\setupTests.js"
 					],
 					[
-						"configurestore",
-						"src\\store\\configureStore.js"
-					],
-					[
-						"src/reducers/index.js",
-						"src\\reducers\\index.js"
-					],
-					[
-						"contactreducer.js",
-						"src\\reducers\\contactReducer.js"
-					],
-					[
-						"contactaction.js",
-						"src\\actions\\contactAction.js"
-					],
-					[
-						"actiontype.js",
-						"src\\actions\\actionType.js"
+						"app.",
+						"src\\App.test.js"
 					],
 					[
 						"app.js",
 						"src\\App.js"
+					],
+					[
+						"posts",
+						"src\\components\\Posts.js"
+					],
+					[
+						"postform",
+						"src\\components\\Postform.js"
+					],
+					[
+						"app",
+						"src\\App.js"
+					],
+					[
+						"indent",
+						"src\\indent.cpp"
+					],
+					[
+						"app.css",
+						"src\\App.css"
 					]
 				],
 				"width": 0.0
@@ -348,7 +536,7 @@
 			{
 			}
 		},
-		"new_window_width": 640.0
+		"new_window_width": 648.0
 	},
 	"windows":
 	[
@@ -362,171 +550,259 @@
 			"buffers":
 			[
 				{
-					"file": "/C/Users/Gargi/redux-contact-app/src/App.js",
+					"file": "/F/Sudharma/test code/React/counter-app/src/App.js",
 					"settings":
 					{
-						"buffer_size": 1413,
+						"buffer_size": 679,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"contents": "Package Control Messages\n========================\n\nJSX\n---\n\n  JSX 3.0.1\n  =========\n  \n  * add attribute names to JSX tags (#22)\n  * Stop JSX in ternaries being highlighted as a generic type (#28)\n  * Fix issues around whitespace after that opening { (#27)\n  \n  \n  Be sure to make issues (or shout at me) for broken things:\n  https://github.com/allanhortle/JSX/issues\n\n\nTheme - Gravity\n---------------\n\n  \n  Thanks for using the Gravity theme!\n  \n  You may need to restart Sublime Text for it to display correctly. Also, if the\n  sidebar icons are missing, disabling installed/inactive themes will typically fix it.\n  \n  Feel free to contact me if you have any questions, or need to report an issues:\n  \n  GitHub Issues\n  https://github.com/frankyonnetti/gravity-sublime-theme/issues\n  \n  or Twitter\n  @dh_Frank\n  \n  \n  *************************************************************************\n  \n  \n  How to enable:\n  \n  To activate the theme for ST3, add or replace your current theme settings with the code below.\n  \n  For Gravity Theme:\n  \n      \"theme\": \"Gravity.sublime-theme\",\n      \"color_scheme\": \"Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme\"\n  \n  \n  For Reverse Gravity Theme:\n  \n      \"theme\": \"Reverse Gravity.sublime-theme\",\n      \"color_scheme\": \"Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme\"\n  \n  \n  For Gravity One Theme:\n  \n      \"theme\": \"Gravity One.sublime-theme\"\n  \n  Suggest using the \"One Dark Sublime Text 3 Color Scheme\" or \"One Half Color Schemes\" with Gravity One.\n    - https://github.com/IceTimux/one-dark-sublime-text-3-color-scheme\n    - https://github.com/sonph/onehalf\n  \n  \n  To increase the file tab height use:\n  \n      \"gravity_tab_height_tall\": true\n  \n  \n  To decrease the file tab height use:\n  \n      \"gravity_tab_height_short\": true\n  \n  \n  To decrease the file tab font size use:\n  \n      \"gravity_tab_font_small\": true\n  \n  \n  For the sidebar header option use:\n  \n      \"gravity_sidebar_header\": true\n  \n  \n  For blue highlight color option use:\n  \n      \"gravity_highlight_color_blue\": true\n  \n  To enable the macOS title bar use (dev build 3127 or newer):\n  \n      \"gravity_title_bar\": true\n\n\nJsPrettier\n----------\n\n  ## 1.18.0\n  \n  Release Date: 2017-12-09\n  \n  - Added support for \"arrowParens\" option. Configure formatting to include\n    parentheses around a sole arrow function parameter. Requires Prettier v1.9+.\n  \n    See the Prettier \"arrowParens\" doc page for more info:\n    https://prettier.io/docs/en/options.html#arrow-function-parentheses\n",
+					"file": "/F/Sudharma/test code/React/counter-app/src/App.test.js",
 					"settings":
 					{
-						"buffer_size": 2518,
-						"line_ending": "Windows",
-						"name": "Package Control Messages",
-						"read_only": true,
-						"scratch": true
-					}
-				},
-				{
-					"file": "/C/Users/Gargi/redux-contact-app/src/actions/contactAction.js",
-					"settings":
-					{
-						"buffer_size": 183,
-						"encoding": "UTF-8",
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Users/Gargi/redux-contact-app/src/reducers/contactReducer.js",
-					"settings":
-					{
-						"buffer_size": 263,
-						"encoding": "UTF-8",
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Users/Gargi/redux-contact-app/src/reducers/index.js",
-					"settings":
-					{
-						"buffer_size": 141,
-						"encoding": "UTF-8",
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Users/Gargi/redux-contact-app/src/store/configureStore.js",
-					"settings":
-					{
-						"buffer_size": 185,
-						"encoding": "UTF-8",
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Users/Gargi/redux-contact-app/src/index.js",
-					"settings":
-					{
-						"buffer_size": 417,
+						"buffer_size": 1136,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/F/Sudharma/test code/React/counter-app/src/setupTests.js",
+					"settings":
+					{
+						"buffer_size": 123,
+						"line_ending": "Windows"
 					}
 				}
 			],
 			"build_system": "",
 			"build_system_choices":
 			[
+				[
+					[
+						[
+							"Packages/C++/C Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/C++/C Single File.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/Java/Ant.sublime-build",
+							""
+						],
+						[
+							"Packages/Java/JavaC.sublime-build",
+							""
+						],
+						[
+							"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/Java/JavaC.sublime-build",
+						""
+					]
+				]
 			],
 			"build_varint": "",
 			"command_palette":
 			{
-				"height": 144.0,
-				"last_filter": "Package Control: install",
+				"height": 0.0,
+				"last_filter": "",
 				"selected_items":
 				[
-					[
-						"Package Control: install",
-						"Package Control: Install Package"
-					],
 					[
 						"jsprettier",
 						"JsPrettier: Format Code"
 					],
 					[
-						"set jsx",
-						"Set Syntax: JSX"
+						"jspretti",
+						"JsPrettier: Format Code"
+					],
+					[
+						"jsprett",
+						"JsPrettier: Format Code"
+					],
+					[
+						"yaml",
+						"Pretty YAML: Reformat (Pretty Print) YAML"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"set yaml",
+						"Set Syntax: YAML"
+					],
+					[
+						"autopep",
+						"AutoPEP8: Format Code"
+					],
+					[
+						"Package Control: up",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"Package Control: install",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: upgrad",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"Package Control: upgrade",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"package",
+						"PackageResourceViewer: Open Resource"
+					],
+					[
+						"pa",
+						"PackageResourceViewer: Open Resource"
+					],
+					[
+						"package res",
+						"PackageResourceViewer: Open Resource"
+					],
+					[
+						"html met",
+						"HTMLPrettify"
 					],
 					[
 						"html",
 						"HTMLPrettify"
 					],
 					[
-						"install",
+						"snippe",
+						"Snippet: HTML - Meta tags"
+					],
+					[
+						"ht",
+						"HTMLPrettify"
+					],
+					[
+						"set html",
+						"Set Syntax: HTML"
+					],
+					[
+						"Package Control: insta",
 						"Package Control: Install Package"
-					],
-					[
-						"list packages",
-						"Package Control: List Packages"
-					],
-					[
-						"remove",
-						"Package Control: Remove Package"
-					],
-					[
-						"jsx",
-						"Set Syntax: JSX"
-					],
-					[
-						"set js",
-						"Set Syntax: JavaScript"
-					],
-					[
-						"select theme",
-						"UI: Select Theme"
-					],
-					[
-						"Package Control: list packages",
-						"Package Control: List Packages"
-					],
-					[
-						"da",
-						"DA UI: Select Accent"
-					],
-					[
-						"set vb",
-						"Set Syntax: VBScript"
-					],
-					[
-						"indentx",
-						"IndentX: Indent"
-					],
-					[
-						"Package Control: upgrade",
-						"Package Control: Upgrade/Overwrite All Packages"
-					],
-					[
-						"Package Control: list",
-						"Package Control: List Packages"
 					],
 					[
 						"Package Control: remove",
 						"Package Control: Remove Package"
 					],
 					[
-						"jsfmt",
-						"JSFMT: Format the current file"
+						"sql",
+						"SQL Beautifier: Format Current SQL File"
+					],
+					[
+						"set sql",
+						"Set Syntax: SQL"
+					],
+					[
+						"set js",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"Package Control: disable",
+						"Package Control: Disable Package"
+					],
+					[
+						"autopep8",
+						"AutoPEP8: Format Code"
 					],
 					[
 						"json",
 						"JSON Reindent: reindent file or selection"
 					],
 					[
-						"set json",
-						"Set Syntax: JSON"
+						"Package Control: remo",
+						"Package Control: Remove Channel"
+					],
+					[
+						"Package Control: upgra",
+						"Package Control: Upgrade/Overwrite All Packages"
+					],
+					[
+						"Package Control: add",
+						"Package Control: Add Channel"
+					],
+					[
+						"resource",
+						"PackageResourceViewer: Open Resource"
+					],
+					[
+						"Package Control: list",
+						"Package Control: List Packages"
+					],
+					[
+						"scala",
+						"ScalaFormat: Format Current File"
+					],
+					[
+						"auto",
+						"User: Python PEP8 Autoformat"
+					],
+					[
+						"open",
+						"PackageResourceViewer: Open Resource"
+					],
+					[
+						"open resourc",
+						"PackageResourceViewer: Open Resource"
 					]
 				],
-				"width": 462.0
+				"width": 0.0
 			},
 			"console":
 			{
-				"height": 126.0,
+				"height": 157.0,
 				"history":
 				[
-					"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+					"window.run_command('resize_window', {'width': 640, 'height': 480})",
+					"window.run_command('resize_window', {'width': 800, 'height': 600})",
+					"window.run_command('resize_window', {'width': 640, 'height': 480})",
+					"window.run_command('resize_window', {'width': 800, 'height': 600})"
 				]
 			},
 			"distraction_free":
@@ -540,112 +816,143 @@
 			},
 			"expanded_folders":
 			[
-				"/C/Users/Gargi/redux-contact-app"
+				"/F/Sudharma/test code/React/counter-app",
+				"/F/Sudharma/test code/React/counter-app/src"
 			],
 			"file_history":
 			[
-				"/C/Users/Gargi/Downloads/Sublime Text Build 3156 x64/Data/Local/License.sublime_license",
-				"/D/Movies/Winter.Moments.XXX.DVDRip.x264-PBU[rarbg]/wintermoments-pbu.nfo",
-				"/C/Users/Gargi/quickstart-sample/target/surefire-reports/TEST-com.amey.AppTest.xml",
-				"/D/Movies/My.Cute.Little.Step.Sister.2.DiSC1.XXX.DVDRip.x264-BTRA/btra-cutelillsteps2d1.nfo",
-				"/C/Users/Gargi/Downloads/Sublime Text Build 3155 x64/f907d536-6543-48e5-93e3-ef367da9765b.dmp",
-				"/C/Users/Gargi/Downloads/Sublime Text Build 3155 x64/Data/Packages/Boxy Theme Addon - Widget Font Size/Widget - Boxy Tomorrow.sublime-settings",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/User/Package Control.sublime-settings",
-				"/D/Autotelnet.wsf",
-				"/C/Users/Gargi/redux-contact-app/src/actions/actionType.js",
-				"/H/Sublime Text/licenses.txt",
-				"/C/Users/Gargi/Downloads/license.txt",
-				"/C/Users/Gargi/Downloads/State Bank of India.htm",
-				"/D/Sublime Text/licenses.txt",
-				"/D/Sudharma/myfirstScript.scala",
-				"/D/prasanna/business idea/12 piece  500  rs weight 400 gram.htm",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/User/JsPrettier.sublime-settings",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/User/Default (Windows).sublime-keymap",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/User/Emmet.sublime-settings",
-				"/G/Unattend.xml",
-				"/C/Users/Gargi/Downloads/scrapper_mod.py",
-				"/C/Users/Gargi/AppData/Roaming/uTorrent/Young And Hairy.torrent",
-				"/D/Movies/Pretty Little Pussies (2017) WEB-DL 540p SPLIT SCENES MP4-KLEENEX/RARBG.com.nfo",
-				"/D/Movies/Young And Curious 4 (2017) WEB-DL SPLIT SCENES MP4-KLEENEX/RARBG.com.nfo",
-				"/D/Movies/Excite.XXX.720p.WEBRip.MP4-VSEX/vsex-excite-720p.nfo",
-				"/D/Movies/Excite.XXX.720p.WEBRip.MP4-VSEX/RARBG.to.nfo",
-				"/C/Installers/Office 2013/office_2013.txt",
-				"/C/Installers/Office 2013/office_2013_pro_plus_retail.txt",
-				"/C/Installers/Office 2013/office_2013_pro_plus.txt",
-				"/C/Installers/Office 2013/office_keys.txt",
-				"/C/Users/Gargi/Downloads/office_2013_pro_plus_retail.txt",
-				"/C/Users/Gargi/MyModule.scala",
-				"/G/Sublime Text/licenses.txt",
-				"/D/repository/repository.xml",
-				"/D/Sudharma/projects/angular/scotch-angular-testing/karma.conf.js",
-				"/D/Sudharma/projects/angular/scotch-angular-testing/server.js",
-				"/D/Movies/First Anal 5 (2017) WEB-DL SPLIT SCENES MP4-KLEENEX/RARBG.com.nfo",
-				"/C/Users/Gargi/utorrent_postscript.bat",
-				"/C/Installers/bitdefender_total_security_keys.txt",
-				"/C/Windows/Temp/Activeark JWT Oy",
-				"/C/Windows/Temp/19841129",
-				"/C/Windows/Temp/Adam Brooks",
-				"/G/Sublime Text/mylicense.txt",
-				"/H/sources/offline.xml",
-				"/H/sources/idwbinfo.txt",
-				"/H/sources/hwexclude.txt",
-				"/H/sources/en-us/erofflps.txt",
-				"/H/sources/hwcompatPE.txt",
-				"/H/sources/hwexcludePE.txt",
-				"/H/sources/hwcompat.txt",
-				"/H/MediaMeta.xml",
-				"/H/autorun.inf",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/Package Control/Package Control.sublime-settings",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+				"/C/Users/Gargi/AppData/Roaming/npm-cache/_logs/2019-05-04T18_48_32_254Z-debug.log",
+				"/C/Users/Gargi/Downloads/torrents.txt",
+				"/F/Sudharma/test code/React/counter-app/src/setupTests.js",
+				"/F/Sudharma/test code/React/counter-app/src/__snapshots__/App.test.js.snap",
+				"/D/Installables/Editors/Sublime Text/Licenses/licenses.txt",
+				"/C/Users/Gargi/.prettierrc.yaml",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/JsPrettier/JsPrettier.sublime-settings",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/User/JsPrettier.sublime-settings",
+				"/F/Sudharma/videocon_d2h",
+				"/J/Sublime Text/Licenses/licenses.txt",
+				"/F/Sudharma/test code/Python/traverse.py",
+				"/F/Sudharma/test code/C/hello.c",
+				"/F/Sudharma/Gargi_fee_details.txt",
+				"/C/Users/Gargi/AppData/Local/Temp/sudharma_karekar_vs_chimus_____.__.__.pgn",
+				"/C/Sublime Text Build 3176 x64/Data/Index/000473.log",
+				"/C/Users/Gargi/AppData/Local/Temp/salbeipit_vs_sudharma_karekar_____.__.__.pgn",
+				"/C/Users/Gargi/AppData/Local/Temp/sudharma_karekar_vs_GMRaby_2019.04.02.pgn",
+				"/F/Sudharma/test code/function_params.cpp",
+				"/F/Sudharma/test code/function2.cpp",
+				"/F/Sudharma/test code/function1.cpp",
+				"/F/Sudharma/test code/function.cpp",
+				"/F/Sudharma/test code/qsorter.cpp",
+				"/F/Sudharma/test code/function_params",
+				"/C/Users/Gargi/Downloads/sudharma_karekar_vs_LazerBlitz_____.__.__.pgn",
+				"/C/Users/Gargi/Downloads/BitBoard.java",
+				"/C/Users/Gargi/Downloads/AlternativeString.java",
+				"/C/Users/Gargi/Downloads/CFG.java",
+				"/C/Users/Gargi/Downloads/SerialCheck.java",
+				"/K/torrents/torrents.txt",
+				"/F/Sudharma/passport.txt",
+				"/F/Sudharma/acct.txt",
+				"/F/Sudharma/licenses.txt",
+				"/F/Sudharma/mtnl.txt",
+				"/F/Sudharma/mtnl_dns.txt",
+				"/F/Sudharma/nero 7 keys.TXT",
+				"/F/Sudharma/networkkey.txt",
+				"/F/Sudharma/KeyValueItemWriter.java.txt",
+				"/F/Sudharma/office2013.txt.txt",
+				"/F/Sudharma/raj.txt",
+				"/F/Sudharma/sbi_fd.txt",
+				"/F/Sudharma/sourceforge.txt",
+				"/F/Sudharma/sublime_resize.txt",
+				"/F/Sudharma/telnet.log",
+				"/F/Sudharma/allenray.txt",
+				"/F/Sudharma/AMEY-PC.txt",
+				"/F/Sudharma/card.txt",
+				"/F/Sudharma/win.txt",
+				"/F/Sudharma/emails.txt",
+				"/F/Sudharma/fallout.txt",
+				"/F/Sudharma/GARGI-PC.txt",
+				"/F/Sudharma/hdfclife.txt",
+				"/F/Sudharma/gargi_label.txt",
+				"/C/Users/Gargi/Downloads/JTO_TESI.pdf.txt",
+				"/F/Bills/Reliance/jio.txt",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/Theme - Default/Widget - Default.sublime-settings",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/Boxy Theme/widgets/Widget - Boxy Yesterday.stTheme",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/Theme - Default/Widget - Default.hidden-color-scheme",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/User/Preferences.sublime-settings",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/Default/Preferences.sublime-settings",
+				"/C/Users/Gargi/Downloads/event.pgn",
+				"/F/Sudharma/KeyValueItemWriter.java",
+				"/F/Sudharma/sun.cfg",
+				"/F/Sudharma/670.cfg",
+				"/F/Sudharma/uncrustify/etc/sun.cfg",
+				"/F/Sudharma/defaults.cfg",
+				"/C/Users/Gargi/Downloads/Barely Legal.torrent",
+				"/C/Users/Gargi/Downloads/670.cfg",
+				"/C/Users/Gargi/Downloads/A_Really_Really_Long_Class_Name.java",
+				"/D/Installables/Editors/Sublime Text/Installers/urls.txt",
+				"/C/Users/Gargi/Downloads/Boxing Beauties (PRIVATE GOLD) XXX WEB-DL NEW 2019.torrent",
+				"/C/Users/Gargi/Downloads/Filling Up the Babysitter",
+				"/C/Sublime Text Build 3176 x64/Data/Local/Session.sublime_session",
+				"/C/Users/Gargi/AppData/Local/Temp/pgn-data.pgn",
+				"/C/Users/Gargi/AppData/Local/Temp/dsbodhane_vs_sudharma_karekar_____.__.__.pgn",
+				"/F/Sudharma/test code/Javascript/styles.js",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/build.gradle",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/JacketRepository/build.gradle",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/Repository/src/main/java/com/pluralsight/repository/Repository.java",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/JacketRepository/src/test/java/com/pluralsight/jacket/repository/test/HibernateRepository.java",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/JacketRepository/src/main/java/com/pluralsight/jacket/models/Entry.java",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/JacketRepository/src/main/java/com/pluralsight/jacket/models/User.java",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/JacketRepository/src/main/java/com/pluralsight/jacket/repository/implementation/JacketRepository.java",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/JacketRepository/src/main/resources/hibernate.cfg.xml",
+				"/C/Users/Gargi/Downloads/gradle-fundamentals/6-gradle-fundamentals-m6-exercise-files/jacket/HibernateRepository/src/main/java/com/pluralsight/hibernate/HibernateRepository.java",
+				"/D/Installables/Editors/Sublime Text/Licenses/license.txt",
+				"/F/Prasanna/pf_details.txt",
+				"/F/Sudharma/test code/Python/browse.py",
+				"/K/torrents/update.py",
+				"/K/torrents/models.txt",
+				"/K/torrents/models1.txt",
+				"/F/Sudharma/test code/Groovy/Example.groovy",
+				"/F/Sudharma/Resume/jpmc_taleo.txt",
+				"/D/Installables/Editors/Sublime Text/Preferences/Preferences.sublime-settings",
+				"/D/Installables/Editors/Sublime Text/Preferences/Preferences_current.sublime-settings",
+				"/D/Installables/Editors/Sublime Text/Preferences/Package Control.sublime-settings",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/User/Package Control.sublime-settings",
+				"/F/Sudharma/Resume/job_portal.txt",
+				"/C/Users/Gargi/Downloads/react-counter/package-lock.json",
+				"/C/Users/Gargi/Downloads/react-counter/public/index.html",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/Color Scheme - Legacy/Slush & Poppies.tmTheme",
+				"/F/Sudharma/test code/Groovy project/.idea/modules.xml",
+				"/F/Sudharma/test code/Groovy project/.idea/workspace.xml",
+				"/F/Sudharma/test code/Groovy project/.idea/misc.xml",
+				"/C/Users/Gargi/Downloads/324905607-Sublime-Text-3114-Licence-txt.txt",
+				"/J/Sublime Text/Licenses/sorted_list.xlsx",
+				"/K/torrents/torrents1.txt",
+				"/C/Users/Gargi/AppData/Local/Temp/sudharma_karekar_vs_aligmss7166_2018.12.09.pgn",
+				"/F/Sudharma/is_email_valid.cpp",
+				"/C/Sublime Text Build 3176 x64/Data/Local/License.sublime_license",
+				"/C/Users/Gargi/AppData/Local/Temp/sudharma_karekar_vs_Mamin_Vad_2018.11.24.pgn",
+				"/C/Users/Gargi/Downloads/everedit_win64_4379_portable/setting.ini",
 				"/C/Windows/WindowsUpdate.log",
-				"/D/jetty-distribution-9.3.11.v20160721/demo-base/webapps/ROOT/jetty.css",
-				"/D/jetty-distribution-9.3.11.v20160721/logs/2017_05_20.stderrout.log",
-				"/C/Users/Gargi/AppData/Local/Temp/Rar$DRa0.857/editor-app/app.js",
-				"/D/jetty-distribution-9.3.11.v20160721/logs/2017_03_11.stderrout.log",
-				"/C/msys64/mingw64.ini",
-				"/D/reliance_energy.txt",
-				"/C/Intel/Logs/IntelChipset.log",
-				"/C/Users/Gargi/Downloads/scrapper.py",
-				"/D/Vodafone/vodafone.txt",
-				"/D/Sudharma/licenses.txt",
-				"/D/uncrustify/build/config.h",
-				"/D/uncrustify/build/Makefile",
-				"/D/uncrustify/build/uncrustify.exe.stackdump",
-				"/C/Users/Gargi/Downloads/46574DF65B209EA7B4D05A7E44EA6092156A19E3.torrent",
-				"/C/Users/Gargi/Downloads/C454FCF9B75991262CFFF1C6BC67B03A68C0A557.torrent",
-				"/D/uncrustify/CMakeLists.txt",
-				"/D/Sudharma/SavingsInvestingParticipantDataFileItemReader.java",
-				"/D/defaults.cfg",
-				"/D/sun.cfg",
-				"/D/uncrustify.cfg",
-				"/H/Torrent/new/5AEC919A06AC3B0F2DD1E85002A6E8C18DDD2C0C.torrent",
-				"/H/Torrent/new/67F9C5D2B083D6B9F10F533C338099A3E1CAB856.torrent",
-				"/H/Torrent/new/64D8A5104EA73F8924EF5F618D3C6455BA28B078.torrent",
-				"/H/Torrent/new/15FD030ACF8F7DBD7BF6C2F730030AF5470187D9.torrent",
-				"/D/Sudharma/hello.cpp",
-				"/D/Sublime Text/Preferences.sublime-settings",
-				"/D/Sudharma/chenard/src/eval.cpp",
-				"/C/Users/Gargi/Downloads/311E25F8392F2C5D6A74EE80D27F290F4A630986.torrent",
-				"/D/apache-activemq-5.13.0/examples/amqp/java/src/main/java/example/Publisher.java",
-				"/D/apache-activemq-5.13.0/examples/amqp/java/src/main/java/example/Listener.java",
-				"/D/apache-maven-3.1.0/conf/settings.xml",
-				"/C/Windows/debug/WIA/wiatrace.log",
-				"/C/Windows/win.ini",
-				"/D/apache-maven-3.1.0/conf/logging/simplelogger.properties",
-				"/C/Users/Gargi/Wireless Network Connection-dlink-lite.xml",
-				"/C/Users/Gargi/Downloads/50F35BFD0919D9E78ECE334979141D721FF169C0.torrent",
-				"/C/Users/Gargi/Downloads/trackers.txt",
-				"/C/Users/Gargi/Downloads/manageAuthorPage.js",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/User/jsfmt.sublime-settings",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/jsfmt/jsfmt.js",
-				"/D/Sudharma/bookmarks/jsfmt.sublime-settings",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/Boxy Theme Addon - Widget Font Size/Widget - Boxy Tomorrow.sublime-settings",
-				"/D/Sublime Text/Sublime Text Build 3126 x64/Data/Packages/Boxy Theme Addon - Widget Font Size/README.md",
-				"/D/Sublime Text/Boxy-Preferences.sublime-settings"
+				"/D/Installables/Editors/Sublime Text/Licenses/sublime_merge_license.txt",
+				"/F/Sudharma/test code/Scala/Foo.scala",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/Boxy Theme Addon - Widget Font Size/Widget - Boxy Yesterday.sublime-settings",
+				"/C/Users/Gargi/Downloads/FrenchDate.scala",
+				"/C/Users/Gargi/Downloads/Timer.scala",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/ScalaFormat/ScalaFormat.sublime-settings",
+				"/C/Sublime Text Build 3176 x64/Data/Packages/User/ScalaFormat.sublime-settings",
+				"/F/Sudharma/sublime_giveaway/geckodriver.log",
+				"/C/Program Files (x86)/TP-Link/TP-Link TL-WN822N/InstConfig.ini",
+				"/F/Bills/Reliance/reliance.txt",
+				"/C/Users/Gargi/Downloads/sublime_torrents.txt",
+				"/F/Sudharma/Chess/chess.txt",
+				"/F/Sudharma/Chess/getchesscode.py",
+				"/C/Users/Gargi/Downloads/brooklyn-decker-0a.jpg",
+				"/C/Users/Gargi/Downloads/license.txt",
+				"/C/flink-1.5.0/log/flink-Gargi-taskmanager.log"
 			],
 			"find":
 			{
-				"height": 24.0
+				"height": 25.0
 			},
 			"find_in_files":
 			{
@@ -659,11 +966,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"shashikant",
-					"CHITRA",
-					"PRASANNA",
-					"13",
-					"rg12o12"
+					"4"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -681,7 +984,7 @@
 			"folders":
 			[
 				{
-					"path": "C:\\Users\\Gargi\\redux-contact-app"
+					"path": "F:\\Sudharma\\test code\\React\\counter-app"
 				}
 			],
 			"groups":
@@ -692,29 +995,29 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/C/Users/Gargi/redux-contact-app/src/App.js",
+							"file": "/F/Sudharma/test code/React/counter-app/src/App.js",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1413,
+								"buffer_size": 679,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1413,
-										1413
+										669,
+										669
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/JSX/JSX.sublime-syntax",
+									"syntax": "Packages/User/JS Custom/Syntaxes/React.sublime-syntax",
 									"tab_size": 2,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 455.0,
+								"translation.y": 79.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 2,
@@ -722,29 +1025,29 @@
 						},
 						{
 							"buffer": 1,
+							"file": "/F/Sudharma/test code/React/counter-app/src/App.test.js",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 2518,
+								"buffer_size": 1136,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1927,
-										1927
+										1136,
+										1136
 									]
 								],
 								"settings":
 								{
-									"auto_indent": false,
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"tab_width": 2,
-									"word_wrap": true
+									"syntax": "Packages/User/JS Custom/Syntaxes/React.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 1072.0,
+								"translation.y": 51.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -752,140 +1055,24 @@
 						},
 						{
 							"buffer": 2,
-							"file": "/C/Users/Gargi/redux-contact-app/src/actions/contactAction.js",
+							"file": "/F/Sudharma/test code/React/counter-app/src/setupTests.js",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 183,
+								"buffer_size": 123,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										183,
-										183
+										123,
+										123
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 6,
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/C/Users/Gargi/redux-contact-app/src/reducers/contactReducer.js",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 263,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										263,
-										263
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 5,
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/C/Users/Gargi/redux-contact-app/src/reducers/index.js",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 141,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										141,
-										141
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 4,
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/C/Users/Gargi/redux-contact-app/src/store/configureStore.js",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 185,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										185,
-										185
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 3,
-							"type": "text"
-						},
-						{
-							"buffer": 6,
-							"file": "/C/Users/Gargi/redux-contact-app/src/index.js",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 417,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										417,
-										417
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/JSX/JSX.sublime-syntax"
+									"syntax": "Packages/User/JS Custom/Syntaxes/React.sublime-syntax"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -899,11 +1086,11 @@
 			],
 			"incremental_find":
 			{
-				"height": 24.0
+				"height": 25.0
 			},
 			"input":
 			{
-				"height": 0.0
+				"height": 44.0
 			},
 			"layout":
 			{
@@ -928,16 +1115,32 @@
 				]
 			},
 			"menu_visible": true,
+			"output.YAMLMacros":
+			{
+				"height": 126.0
+			},
+			"output.autopep8":
+			{
+				"height": 112.0
+			},
+			"output.exec":
+			{
+				"height": 100.0
+			},
 			"output.find_results":
 			{
 				"height": 0.0
 			},
+			"output.git":
+			{
+				"height": 100.0
+			},
 			"pinned_build_system": "",
-			"position": "0,0,1,-1,-1,-1,-1,614,88,88,736",
+			"position": "0,0,1,-1,-1,-1,-1,797,547,259,1203",
 			"project": "",
 			"replace":
 			{
-				"height": 44.0
+				"height": 46.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -947,32 +1150,36 @@
 				"selected_items":
 				[
 					[
-						"index.js",
-						"src\\index.js"
+						"set",
+						"src\\setupTests.js"
 					],
 					[
-						"configurestore",
-						"src\\store\\configureStore.js"
-					],
-					[
-						"src/reducers/index.js",
-						"src\\reducers\\index.js"
-					],
-					[
-						"contactreducer.js",
-						"src\\reducers\\contactReducer.js"
-					],
-					[
-						"contactaction.js",
-						"src\\actions\\contactAction.js"
-					],
-					[
-						"actiontype.js",
-						"src\\actions\\actionType.js"
+						"app.",
+						"src\\App.test.js"
 					],
 					[
 						"app.js",
 						"src\\App.js"
+					],
+					[
+						"posts",
+						"src\\components\\Posts.js"
+					],
+					[
+						"postform",
+						"src\\components\\Postform.js"
+					],
+					[
+						"app",
+						"src\\App.js"
+					],
+					[
+						"indent",
+						"src\\indent.cpp"
+					],
+					[
+						"app.css",
+						"src\\App.css"
 					]
 				],
 				"width": 0.0
@@ -1008,7 +1215,7 @@
 			"template_settings":
 			{
 			},
-			"window_id": 21,
+			"window_id": 65,
 			"workspace_name": ""
 		}
 	],

@@ -1,4 +1,11 @@
-# Js​Prettier
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                     _     ____           _   _   _                           │
+│                    | |___|  _ \ _ __ ___| |_| |_(_) ___ _ __                 │
+│                 _  | / __| |_) | '__/ _ \ __| __| |/ _ \ '__|                │
+│                | |_| \__ \  __/| | |  __/ |_| |_| |  __/ |                   │
+│                 \___/|___/_|   |_|  \___|\__|\__|_|\___|_|                   │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
 
     JsPrettier is a Sublime Text Plug-in for Prettier, the opinionated code
     formatter.
@@ -79,21 +86,27 @@
                     "node_path": "",
                     "auto_format_on_save": false,
                     "auto_format_on_save_excludes": [],
+                    "auto_format_on_save_requires_prettier_config": false,
                     "allow_inline_formatting": false,
                     "custom_file_extensions": [],
                     "max_file_size_limit": -1,
+                    "disable_tab_width_auto_detection": false,
+                    "disable_prettier_cursor_offset": false,
                     "additional_cli_args": {},
                     "prettier_options": {
                         "printWidth": 80,
+                        "tabWidth": 2,
                         "singleQuote": false,
                         "trailingComma": "none",
                         "bracketSpacing": true,
                         "jsxBracketSameLine": false,
-                        "parser": "babylon",
+                        "parser": "babel",
                         "semi": true,
                         "requirePragma": false,
                         "proseWrap": "preserve",
-                        "arrowParens": "avoid"
+                        "arrowParens": "avoid",
+                        "htmlWhitespaceSensitivity": "css",
+                        "quoteProps": "as-needed"
                     }
                 }
             }
@@ -115,4 +128,4 @@
 
     The MIT License (MIT)
 
-    Copyright (c) 2017 Jon LaBelle
+    Copyright (c) 2019 Jon LaBelle
